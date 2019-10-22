@@ -1,10 +1,8 @@
+<?php require_once("validador_acesso.php");?>
+
 <?php
   session_start();
-
-  if(isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM'){
-    header('Location: index.php?login=erro2');
-  }
-
+  echo $_SESSION['autenticado'];
 ?>
 
 <html>
@@ -76,7 +74,7 @@
                       </div>
                     </div>
                   </form>
-
+                  
                 </div>
               </div>
             </div>

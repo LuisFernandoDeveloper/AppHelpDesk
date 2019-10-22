@@ -1,11 +1,10 @@
 <?php
-session_start();
-echo $_SESSION['x'];
+  session_start();
+  /* echo $_SESSION['autenticado']; */
 ?>
 
 <html>
-
-<head>
+  <head>
   <meta charset="utf-8" />
   <title>App Help Desk</title>
 
@@ -20,7 +19,7 @@ echo $_SESSION['x'];
   </style>
 </head>
 
-<body>
+  <body>
 
   <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
@@ -45,17 +44,17 @@ echo $_SESSION['x'];
               <div class="form-group">
                 <input name="senha" type="password" class="form-control" placeholder="Senha">
               </div>
-              <? if (isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
+              <? if(isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
 
-                <div class="alert alert-danger">
+                <div class="text-danger">
                   Usuário ou senha inválido(s)
                 </div>
 
               <? } ?>
 
-              <? if (isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
+              <? if(isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
 
-                <div class="alert alert-danger">
+                <div class="text-danger">
                   Faça login antes de acessar as paginas protegidas
                 </div>
 
@@ -66,6 +65,5 @@ echo $_SESSION['x'];
         </div>
       </div>
     </div>
-</body>
-
+  </body>
 </html>
