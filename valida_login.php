@@ -17,9 +17,10 @@
     }
 
     if($usuario_autenticado){
-        echo 'Usuario autenticado';
-        header('Location: home.php');
         $_SESSION['autenticado'] = 'SIM';
+        $_SESSION['x'] = 'um valor';
+        $_SESSION['y'] = 'outro valor';
+        header('Location: home.php');        
     }else{
         //forçar redirecionamento caso de usuario ou senha incorretos
         $_SESSION['autenticado'] = 'NAO';
