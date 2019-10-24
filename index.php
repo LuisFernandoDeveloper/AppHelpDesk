@@ -9,7 +9,7 @@
     .card-login {
       padding: 30px 0 0 0;
       width: 350px;
-      margin: 0 auto;
+      margin: 100px auto;
     }
   </style>
 </head>
