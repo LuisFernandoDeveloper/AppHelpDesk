@@ -6,7 +6,7 @@
 $chamados = array();
 
 //abrir arquivo para leitura com parametro 'r'
-$arquivo = fopen('arquivo.hd', 'r');
+$arquivo = fopen('../../../app_help_desk/arquivo.hd', 'r');
 
 //enquanto houver registros (linhas) a serem recuperados
 while(!feof($arquivo)){
