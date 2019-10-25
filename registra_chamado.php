@@ -5,7 +5,7 @@
     $descricao = str_replace('#', '-', $_POST['descricao']);
 
 
-    $texto = $titulo . '#' .  $titulo . '#' . $descricao . PHP_EOL;//PHP_EOL constante armazena uma quabra de linha
+    $texto = $titulo . '#' .  $categoria . '#' . $descricao . PHP_EOL;//PHP_EOL constante armazena uma quabra de linha
 
     //abrindo arquivo
     $arquivo = fopen('arquivo.hd', 'a');
